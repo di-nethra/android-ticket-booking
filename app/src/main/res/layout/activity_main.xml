@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/trainbackground">
+
+        <!-- App Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket Reservation Agent"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Card 1: Make a Reservation -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_make_reservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="16dp"
+            app:cardBackgroundColor="#BEBEBE"
+            android:clickable="true"
+            android:onClick="onCardClick">
+
+            <!-- Content of Card 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Add your content for Make a Reservation card here -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make a Reservation"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/makereservation"
+                    android:contentDescription="Make a Reservation Icon" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 2: Upcoming Bookings -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_upcoming_bookings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#E8E9EB"
+            android:clickable="true"
+            android:onClick="onCardClick">
+
+            <!-- Content of Card 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Add your content for Upcoming Bookings card here -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upcoming Bookings"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/upcomingbookings"
+                    android:contentDescription="Upcoming Bookings Icon" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 3: Past Bookings -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_past_bookings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#BEBEBE"
+            android:clickable="true"
+            android:onClick="onCardClick">
+
+            <!-- Content of Card 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Add your content for Past Bookings card here -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Past Bookings"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pastbookings"
+                    android:contentDescription="Past Bookings Icon" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 4: View Profile -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#E8E9EB "
+            android:clickable="true"
+            android:onClick="onCardClick">
+
+            <!-- Content of Card 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Profile"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile"
+                    android:contentDescription="View Profile Icon" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

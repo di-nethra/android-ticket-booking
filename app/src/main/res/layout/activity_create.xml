@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/create_reservation_background_gradient">
+
+    <TextView
+        android:id="@+id/textViewReferenceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ReservationId"
+        android:textSize="18sp"
+        android:textColor="#333333" />
+
+    <EditText
+        android:id="@+id/editTextReferenceId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewReferenceId"
+        android:hint="Enter ReservationId"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_bg"
+        android:paddingStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTravellerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TravellerId"
+        android:textSize="18sp"
+        android:layout_below="@+id/editTextReferenceId"
+        android:layout_marginTop="16dp"
+        android:textColor="#333333" />
+
+    <EditText
+        android:id="@+id/editTextTravellerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTravellerId"
+        android:hint="Enter TravellerId"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_bg"
+        android:paddingStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTrainId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TrainId"
+        android:textSize="18sp"
+        android:layout_below="@+id/editTextTravellerId"
+        android:layout_marginTop="16dp"
+        android:textColor="#333333" />
+
+    <EditText
+        android:id="@+id/editTextTrainId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTrainId"
+        android:hint="Enter TrainId"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_bg"
+        android:paddingStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewReservationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation Date"
+        android:textSize="18sp"
+        android:layout_below="@+id/editTextTrainId"
+        android:layout_marginTop="16dp"
+        android:textColor="#333333" />
+
+    <EditText
+        android:id="@+id/editTextReservationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewReservationDate"
+        android:hint="Select Reservation Date"
+        android:focusable="false"
+        android:clickable="true"
+        android:background="@drawable/edittext_bg"
+        android:paddingStart="16dp"/>
+
+    <!-- Add the "From" Location -->
+    <TextView
+        android:id="@+id/textViewFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textSize="18sp"
+        android:layout_below="@+id/editTextReservationDate"
+        android:layout_marginTop="16dp"
+        android:textColor="#333333" />
+
+    <EditText
+        android:id="@+id/editTextFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFrom"
+        android:hint="Enter From Location"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_bg"
+        android:paddingStart="16dp"/>
+
+    <!-- Add the "To" Location -->
+    <TextView
+        android:id="@+id/textViewTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:textSize="18sp"
+        android:layout_below="@+id/editTextFrom"
+        android:layout_marginTop="16dp"
+        android:textColor="#333333" />
+
+    <EditText
+        android:id="@+id/editTextTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTo"
+        android:hint="Enter To Location"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_bg"
+        android:paddingStart="16dp"/>
+
+    <ListView
+        android:id="@+id/listViewTrainSchedules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTo"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonCreateReservation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listViewTrainSchedules"
+        android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:background="#000000"
+    android:backgroundTint="#B11212"
+    android:text="Create Reservation"
+    android:textColor="#FFFFFF" />
+
+</RelativeLayout>
+
+</ScrollView>
+

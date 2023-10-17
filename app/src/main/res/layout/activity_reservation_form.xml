@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/trainbackground"
+        android:scaleType="centerCrop" />
+
+    <!-- Content Layout (overlays the background) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Create Reservation Heading -->
+        <TextView
+            android:id="@+id/textViewCreateReservation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Reservation"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Reference ID EditText -->
+        <EditText
+            android:id="@+id/editTextReferenceId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCreateReservation"
+            android:hint="Reference ID"
+            android:background="#ECECEC"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Reservation Date EditText -->
+        <EditText
+            android:id="@+id/editTextReservationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextReferenceId"
+            android:hint="Reservation Date"
+            android:background="#ECECEC"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Reservation Time EditText -->
+        <EditText
+            android:id="@+id/editTextReservationTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextReservationDate"
+            android:hint="Reservation Time"
+            android:background="#ECECEC"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- From Location EditText -->
+        <EditText
+            android:id="@+id/editTextFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextReservationTime"
+            android:hint="From Location"
+            android:background="#ECECEC"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- To Location EditText -->
+        <EditText
+            android:id="@+id/editTextTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextFrom"
+            android:hint="To Location"
+            android:background="#ECECEC"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonGetSchedules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTo"
+            android:text="Get Train Schedules"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:background="#009688"
+            android:elevation="4dp" />
+
+        <!-- CardView containing the RecyclerView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewTrainSchedules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonGetSchedules"
+            android:layout_marginTop="8dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewTrainSchedules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</RelativeLayout>

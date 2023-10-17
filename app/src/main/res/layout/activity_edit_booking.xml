@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/trainbackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit your Reservation"
+        android:textColor="#FFFFFF"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/reservationDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reservation Date"
+        android:background="#ECECEC"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:drawablePadding="8dp" />
+
+    <EditText
+        android:id="@+id/reservationTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reservation Time"
+        android:background="#ECECEC"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:drawablePadding="8dp" />
+
+
+    <CheckBox
+        android:id="@+id/statusCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Reservation"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:background="#009688"
+        android:elevation="4dp" />
+</LinearLayout>
